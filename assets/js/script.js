@@ -9,8 +9,8 @@ function returnHi(){
 
 console.log(returnHi());
 
-function calculator(fahr) {
-    return ((fahr - 32) * 5) / 9;
+function calculator(fahrenheit) {
+    return ((fahrenheit - 32) * 5) / 9;
   }
   
   calculator(120);
@@ -44,12 +44,13 @@ console.log(sum1(823143, 12344930));
 let sum2 = (num1, num2) => num1 + num2;
 console.log(sum2(823143, 12344930));
 
-//andet eksempel arrow functios. fordi der kun er 1 parameter, er det ikke nødvendigt med {};
+//andet eksempel arrow functions. fordi der kun er 1 linje kode, er det ikke nødvendigt med {};
+//Hvis funktionen ikke tager nogle parametre, skal (num) bare være som f.eks (). 
 function isPositive(num) {
     return num >= 0; 
 }
 console.log(isPositive(2));
 
-//den samme funciton som overstående, men med arrow syntax
+//den samme function som overstående, men med arrow syntax 
 let isPositive2 = (num) => num >= 0;
 console.log(isPositive2(2));
